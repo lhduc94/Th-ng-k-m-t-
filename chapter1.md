@@ -1,9 +1,9 @@
 ---
-title: Test
-description: Test
+title: 'Đọc dữ liệu '
+description: 'Đọc dữ liệu và tìm hiểu cấu trúc file'
 ---
 
-## An exercise title written in sentence case
+## Đọc dữ liệu
 
 ```yaml
 type: NormalExercise 
