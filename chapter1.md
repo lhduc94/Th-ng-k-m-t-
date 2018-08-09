@@ -14,7 +14,7 @@ key: 67f01da0d3
 ```
 
 
-Dữ liệu thông tin thành viên được lưu dưới dạng file `members.csv` tại đường dẫn `'datasets/members.csv'`.
+Dữ liệu thông tin thành viên được lưu dưới dạng file `members.csv` tại đường dẫn `'/datasets/members.csv'`.
 
 Trong python ta sử dụng thư viện `pandas` để load file `csv` dưới dạng DataFrame.
 
@@ -49,25 +49,27 @@ members = pd.read_csv(__)
 # Kích thước dữ liệu
 print(members.__)
 # Xuất các dòng đầu của dữ liệu
-print(member.__)
+print(members.__)
 # Xuất 3 dòng cuối của dữ liệu
-print(member.__(3))
+print(members.__(3))
 ```
 `@solution`
 ```{python}
 # Import thư viện pandas
 import pandas as pd
 # Đọc file dữ liệu
-members = pd.read_csv('datasets/members.csv')
+members = pd.read_csv('/datasets/members.csv')
 # Kích thước dữ liệu
 print(members.shape)
 # Xuất các dòng đầu của dữ liệu
-print(member.head())
+print(members.head())
 # Xuất 3 dòng cuối của dữ liệu
-print(member.tail(3))
+print(members.tail(3))
 ```
 `@sct`
 ```{python}
-# Update this to something more informative.
-success_msg("Some praise! Then reinforce a learning objective from the exercise.")
+Ex().check_correct(
+  check_object("members").has_equal_value(incorrect_msg="Bạn đã load đúng đường dẫn chưa")
+)
+success_msg("Great job!")
 ```
