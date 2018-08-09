@@ -8,3 +8,9 @@ set -e
 # pip3 install scikit-learn==0.19.1
 
 
+#Add file
+DATADIR=/usr/local/share/datasets/
+mkdir -p $DATADIR
+wget -O $DATADIR/members.csv https://assets.datacamp.com/production/repositories/3365/datasets/0dfd9cf73134137fc9e7abcbdce4a3d8af269ae9/members.csv
+
+
