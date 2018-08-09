@@ -68,15 +68,10 @@ print(members.tail(3))
 ```
 `@sct`
 ```{python}
-Ex().has_import("pandas")
-Ex().check_correct(
-  multi(
-	check_function("pandas.read_csv").check_args(0).has_equal_value(incorrect_msg="Bạn đã load đúng đường dẫn chưa")
-    check_object("members").has_equal_value(incorrect_msg="Bạn đã gán dữ liệu chưa")
-  )
-)
-Ex().has_printout(0,not_printed_msg = "__JINJA__:Bạn đã dùng đúng lệnh `shape` chưa")
-Ex().has_printout(1,not_printed_msg = "__JINJA__:Bạn đã dùng đúng lệnh `head()` chưa")
-Ex().has_printout(2,not_printed_msg = "__JINJA__:Bạn đã dùng đúng lệnh `tail()` chưa")
+Ex().has_equal_ast(code = "import pandas as pd")
+Ex().has_equal_ast(code = "members = pd.read_csv('/datasets/members.csv')")
+Ex().has_equal_ast(code = "print(members.shape)")
+Ex().has_equal_ast(code = "print(members.head())")
+Ex().has_equal_ast(code = "print(members.tail(3))")
 success_msg("Great job!")
 ```
