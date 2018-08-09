@@ -69,5 +69,5 @@ print(member.tail(3))
 `@sct`
 ```{python}
 # Update this to something more informative.
-success_msg("Bạn có chắc nhập đúng đường dẫn. Thuộc tính thì không có () và hàm thì có ()")
+success_msg("Some praise! Then reinforce a learning objective from the exercise.")
 ```
