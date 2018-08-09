@@ -71,5 +71,8 @@ print(members.tail(3))
 Ex().check_correct(
   check_object("members").has_equal_value(incorrect_msg="Bạn đã load đúng đường dẫn chưa")
 )
+Ex().has_printout(0,not_printed_msg = "__JINJA__:Bạn đã dùng đúng lệnh `shape` chưa")
+Ex().has_printout(1,not_printed_msg = "__JINJA__:Bạn đã dùng đúng lệnh `head()` chưa")
+Ex().has_printout(2,not_printed_msg = "__JINJA__:Bạn đã dùng đúng lệnh `tail()` chưa")
 success_msg("Great job!")
 ```
