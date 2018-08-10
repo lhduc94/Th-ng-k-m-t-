@@ -51,6 +51,8 @@ members = pd.read_csv(__)
 # Kích thước dữ liệu
 print(members.__)
 # Xuất các dòng đầu của dữ liệu
+print(members.__)
+# Xuất 3 dòng cuối của dữ liệu
 ```
 
 `@solution`
@@ -63,6 +65,8 @@ members = pd.read_csv('/datasets/members.csv')
 # Kích thước dữ liệu
 print(members.shape)
 # Xuất các dòng đầu của dữ liệu
+print(members.head())
+# Xuất 3 dòng cuối của dữ liệu
 ```
 
 `@sct`
@@ -74,5 +78,6 @@ Ex().check_correct(
     check_function('pandas.read_csv').check_args(0).has_equal_ast()
 )
 Ex().has_printout(0)
+Ex().has_printout(1)
 success_msg("Great job!")
 ```
