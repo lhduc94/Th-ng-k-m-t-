@@ -27,8 +27,7 @@ Trong python ta sử dụng thư viện `pandas` để load file `csv` dưới d
 - Import thư viện `pandas` vào python và đặt tên là `pd`
 - Sử dụng `pd.read()` để load file `members.csv`
 - Gọi thuộc tính `shape`
-- Xuất ra các dòng đầu của dữ liệu, sử dụng `head()`
-- Xuất ra 3 dòng cuối của dữ liệu, sử dụng `tail()`
+- Xuất ra các dòng đầu của dữ liệu, sử dụng `head()`. Xuất ra 3 dòng cuối của dữ liệu, sử dụng `tail()`
 
 `@hint`
 - Here is the hint for this setup problem. 
