@@ -65,7 +65,7 @@ members = pd.read_csv('/datasets/members.csv')
 ```{python}
 Ex().has_import("pandas", same_as = False)
 Ex().check_correct(
-  check_correct(
+  check_multi(
     check_object('members').has_equal_value(),
     check_function('pandas.read_csv').check_args(0).has_equal_ast()
   )
