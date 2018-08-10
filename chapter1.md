@@ -53,6 +53,8 @@ members = pd.read_csv(__)
 print(members.__)
 # Xuất các dòng đầu của dữ liệu
 print(members.__)
+# Xuất 3 dòng cuối của dữ liệu
+print(members.__(3))
 ```
 
 `@solution`
@@ -66,6 +68,8 @@ members = pd.read_csv('/datasets/members.csv')
 print(members.shape)
 # Xuất các dòng đầu của dữ liệu
 print(members.head())
+# Xuất 3 dòng cuối của dữ liệu
+print(members.tail(3))
 ```
 
 `@sct`
