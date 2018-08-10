@@ -1,6 +1,6 @@
 ---
-title: 'Đọc dữ liệu '
-description: 'Đọc dữ liệu và tìm hiểu cấu trúc file'
+  title: "Đọc dữ liệu "
+  description: "Đọc dữ liệu và tìm hiểu cấu trúc file"
 ---
 
 ## Đọc dữ liệu
@@ -37,10 +37,13 @@ Trong python ta sử dụng thư viện `pandas` để load file `csv` dưới d
 - Typically one hint per instruction is a sensible amount.
 
 `@pre_exercise_code`
+
 ```{python}
 # Load datasets and packages here.
 ```
+
 `@sample_code`
+
 ```{python}
 # Import thư viện pandas
 import pandas as pd
@@ -53,7 +56,9 @@ print(members.__)
 # Xuất 3 dòng cuối của dữ liệu
 print(members.__(3))
 ```
+
 `@solution`
+
 ```{python}
 # Import thư viện pandas
 import pandas as pd
@@ -66,12 +71,33 @@ print(members.head())
 # Xuất 3 dòng cuối của dữ liệu
 print(members.tail(3))
 ```
+
 `@sct`
+
 ```{python}
-Ex().has_equal_ast(code = "import pandas as pd")
-Ex().has_equal_ast(code = "members = pd.read_csv('/datasets/members.csv')")
-Ex().has_equal_ast(code = "print(members.shape)")
-Ex().has_equal_ast(code = "print(members.head())")
-Ex().has_equal_ast(code = "print(members.tail(3))")
+Ex().has_import("pandas", same_as = False)
+
+Ex().check_correct(
+  check_correct(
+    check_object('members').has_equal_value(),
+    check_function('pandas.read_csv').check_args(0).has_equal_ast()
+  )
+)
+
+Ex().check_correct(
+  has_printout(0),
+  check_function("members.shape", signature=False)
+)
+
+Ex().check_correct(
+  has_printout(1),
+  check_function("members.head", signature=False)
+)
+
+Ex().check_correct(
+  has_printout(2),
+  check_function("members.tail", signature=False).check_args(0).has_equal_ast()
+)
+
 success_msg("Great job!")
 ```
