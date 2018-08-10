@@ -78,5 +78,6 @@ Ex().check_correct(
 )
 Ex().has_printout(0)
 Ex().has_printout(1)
+Ex().has_printout(2)
 success_msg("Great job!")
 ```
