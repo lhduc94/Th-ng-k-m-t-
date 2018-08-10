@@ -48,13 +48,7 @@ Trong python ta sử dụng thư viện `pandas` để load file `csv` dưới d
 # Import thư viện pandas
 import pandas as pd
 # Đọc file dữ liệu
-members = pd.read_csv(__)
-# Kích thước dữ liệu
-print(members.__)
-# Xuất các dòng đầu của dữ liệu
-print(members.__)
-# Xuất 3 dòng cuối của dữ liệu
-print(members.__(3))
+
 ```
 
 `@solution`
@@ -63,13 +57,7 @@ print(members.__(3))
 # Import thư viện pandas
 import pandas as pd
 # Đọc file dữ liệu
-members = pd.read_csv('/datasets/members.csv')
-# Kích thước dữ liệu
-print(members.shape)
-# Xuất các dòng đầu của dữ liệu
-print(members.head())
-# Xuất 3 dòng cuối của dữ liệu
-print(members.tail(3))
+
 ```
 
 `@sct`
@@ -77,27 +65,6 @@ print(members.tail(3))
 ```{python}
 Ex().has_import("pandas", same_as = False)
 
-Ex().check_correct(
-  check_correct(
-    check_object('members').has_equal_value(),
-    check_function('pandas.read_csv').check_args(0).has_equal_ast()
-  )
-)
-
-Ex().check_correct(
-  has_printout(0),
-  check_function("members.shape", signature=False)
-)
-
-Ex().check_correct(
-  has_printout(1),
-  check_function("members.head", signature=False)
-)
-
-Ex().check_correct(
-  has_printout(2),
-  check_function("members.tail", signature=False).check_args(0).has_equal_ast()
-)
 
 success_msg("Great job!")
 ```
