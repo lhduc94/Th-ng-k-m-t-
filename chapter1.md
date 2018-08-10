@@ -53,6 +53,7 @@ print(members.__)
 # Xuất các dòng đầu của dữ liệu
 print(members.__)
 # Xuất 3 dòng cuối của dữ liệu
+print(members.__(3))
 ```
 
 `@solution`
@@ -67,6 +68,7 @@ print(members.shape)
 # Xuất các dòng đầu của dữ liệu
 print(members.head())
 # Xuất 3 dòng cuối của dữ liệu
+print(members.tail(3))
 ```
 
 `@sct`
@@ -79,5 +81,6 @@ Ex().check_correct(
 )
 Ex().has_printout(0)
 Ex().has_printout(1)
+Ex().has_printout(2)
 success_msg("Great job!")
 ```
