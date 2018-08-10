@@ -72,8 +72,6 @@ Ex().check_correct(
     check_object('members').has_equal_value(),
     check_function('pandas.read_csv').check_args(0).has_equal_ast()
 )
-Ex().check_correct(
-	has_printout(0)
-)
+Ex().has_printout(0)
 success_msg("Great job!")
 ```
