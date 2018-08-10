@@ -47,7 +47,8 @@ Trong python ta sử dụng thư viện `pandas` để load file `csv` dưới d
 # Import thư viện pandas
 import pandas as pd
 # Đọc file dữ liệu
-
+members = pd.read_csv(__)
+# Kích thước dữ liệu
 ```
 
 `@solution`
@@ -56,12 +57,17 @@ import pandas as pd
 # Import thư viện pandas
 import pandas as pd
 # Đọc file dữ liệu
-
+members = pd.read_csv('/datasets/members.csv')
+# Kích thước dữ liệu
 ```
 
 `@sct`
 
 ```{python}
 Ex().has_import("pandas", same_as = False)
+Ex().check_correct(
+    check_object('members').has_equal_value(),
+    check_function('pandas.read_csv').check_args(0).has_equal_ast()
+)
 success_msg("Great job!")
 ```
