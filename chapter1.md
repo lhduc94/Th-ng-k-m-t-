@@ -49,6 +49,8 @@ import pandas as pd
 # Đọc file dữ liệu
 members = pd.read_csv(__)
 # Kích thước dữ liệu
+print(members.__)
+# Xuất các dòng đầu của dữ liệu
 ```
 
 `@solution`
@@ -59,6 +61,8 @@ import pandas as pd
 # Đọc file dữ liệu
 members = pd.read_csv('/datasets/members.csv')
 # Kích thước dữ liệu
+print(members.shape)
+# Xuất các dòng đầu của dữ liệu
 ```
 
 `@sct`
@@ -69,5 +73,6 @@ Ex().check_correct(
     check_object('members').has_equal_value(),
     check_function('pandas.read_csv').check_args(0).has_equal_ast()
 )
+Ex().has_printout(0)
 success_msg("Great job!")
 ```
