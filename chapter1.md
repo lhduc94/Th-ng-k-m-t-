@@ -123,6 +123,8 @@ new_names = ['col0','col1','col2','col3','col4']
 ```{python}
 #Gán tên cột cho biến col_names
 col_names = list(members.__)
+#Xuất danh sách tên cột col_names
+print(members.__)
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,col_names))
 #Đổi tên cột
@@ -134,6 +136,8 @@ members.columns = __
 ```{python}
 #Gán tên cột cho biến col_names
 col_names = list(members.columns)
+#Xuất danh sách tên cột col_names
+print(members.columns)
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,col_names))
 #Đổi tên cột
@@ -144,5 +148,6 @@ members.columns = new_names
 
 ```{python}
 Ex().check_object("col_names").has_equal_value()
+Ex().has_printout(0)
 success_msg("Great job!")
 ```
