@@ -104,6 +104,8 @@ Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫ
 
 `@instructions`
 - Xuất tên các cột sử dụng `columns` với tập dữ liệu `members`
+- Map tên cột với tên mới và lưu lại dưới dạng `dict`
+- Thay đổi tên các cột thành các tên mới được lưu trong `new_names`
 
 `@hint`
 - Bạn đã gọi thuộc tính `columns` chưa
@@ -123,6 +125,8 @@ new_names = ['col0','col1','col2','col3','col4']
 print(members.__)
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,members.columns)
+#Đổi tên các cột 
+members.columns = __
 ```
 
 `@solution`
@@ -132,11 +136,14 @@ map_col = dict(zip(new_names,members.columns)
 print(members.columns)
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,members.columns)
+#Đổi tên các cột 
+members.columns = __
 ```
 
 `@sct`
 
 ```{python}
 Ex().has_printout(0)
+Ex().check_object("members.columns").has_equal_value()
 success_msg("Great job!")
 ```
