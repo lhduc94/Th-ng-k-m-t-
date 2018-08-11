@@ -152,7 +152,7 @@ print(members.columns)
 
 ```{python}
 Ex().has_printout(0)
-Ex().check_funtion('DataFrame.rename').check_args("columns").has_equal_ast()
+Ex().check_funtion('members.rename').check_args("columns").has_equal_ast()
 Ex().has_printout(1)
 success_msg("Great job!")
 ```
