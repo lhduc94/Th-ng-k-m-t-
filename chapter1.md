@@ -96,15 +96,7 @@ key: 03e7143a4a
 ```
 
 
-DataFrame là dữ liệu dưới dạng bảng, bao gồm cột và dòng. Để xem tên các cột có thể gọi thuộc tính `columns`. Tên các cột được hiển thị dưới dạng
-`Index(['Dấu thời gian', 'Giới tính', 'Tỉnh thành đang làm việc',
-       'Số năm tại khu vực sinh sống', 'Độ tuổi'],
-      dtype='object')`
 
-Để thuận tiện cho việc truy vấn cũng như đảm bảo an toàn cho dữ liệu, chúng ta tiến hành mã hóa tên các cột. 
-`new_names = ['col0', 'col1', 'col2', 'col3', 'col4']`.  Biến `new_names` đã được tạo sẵn
-
-Thư viện `pandas` đã được load sẵn với `pd`.  File csv đã được khai báo với biến `members`
 
 
 `@instructions`
