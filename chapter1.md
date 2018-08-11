@@ -139,7 +139,7 @@ print(members.__)
 col_names = list(__.__)
 #Map tên cột và tên đã mã hóa:
 #map_col = dict(zip(new_names,col_names)
-#Gán tên cột với 
+#Gán tên cột mới 
 #members.__ = new_names
 ```
 
