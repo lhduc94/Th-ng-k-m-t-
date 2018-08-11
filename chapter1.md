@@ -131,7 +131,7 @@ print(members.__)
 map_col = dict(zip(members.columns,new_names))
 print(map_col)
 #Đổi tên cột
-members.rename(columns=__)
+members = members.rename(columns=__)
 #Xuất danh sách tên cột
 print(members.__)
 ```
@@ -145,7 +145,7 @@ print(members.columns)
 map_col = dict(zip(members.columns,new_names))
 print(map_col)
 #Đổi tên cột
-members.rename(columns=map_col)
+members = members.rename(columns=map_col)
 #Xuất danh sách tên cột
 print(members.columns)
 ```
@@ -155,6 +155,9 @@ print(members.columns)
 ```{python}
 Ex().has_printout(0)
 Ex().has_printout(1)
+Ex().check_correct(
+ 	check_objec('members').has_equal_value()
+)
 Ex().has_printout(2)
 success_msg("Great job!")
 ```
