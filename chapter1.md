@@ -87,7 +87,7 @@ success_msg("Great job!")
 
 ---
 
-## Xem thông tin dữ liệu
+## Xem tên cột dữ liệu
 
 ```yaml
 type: NormalExercise 
