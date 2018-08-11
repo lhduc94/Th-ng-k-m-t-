@@ -138,7 +138,7 @@ print(members.__)
 #Lưu tên cột với biến : col_names
 col_names = list(__.__)
 #Map tên cột và tên đã mã hóa:
-map_col = dict(zip(new_names,col_names)
+map_col = dict(zip(new_names,col_names))
 #Gán tên cột mới 
 #members.__ = new_names
 ```
@@ -151,7 +151,7 @@ print(members.columns)
 #Lưu tên cột với biến : col_names
 col_names = list(members.columns)
 #Map tên cột và tên đã mã hóa:
-map_col = dict(zip(new_names,col_names)
+map_col = dict(zip(new_names,col_names))
 #Gán tên cột mới
 #members.columns = new_names
 ```
