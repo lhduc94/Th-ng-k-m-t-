@@ -84,3 +84,81 @@ Ex().has_printout(1)
 Ex().has_printout(2)
 success_msg("Great job!")
 ```
+
+---
+
+## Xem thông tin dữ liệu
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 03e7143a4a   
+```
+
+
+DataFrame là dữ liệu dưới dạng bảng, bao gồm cột và dòng. Để xem tên các cột có thể gọi thuộc tính `columns`. Tên các cột được hiển thị dưới dạng
+`Index(['Dấu thời gian', 'Giới tính', 'Tỉnh thành đang làm việc',
+       'Số năm tại khu vực sinh sống', 'Độ tuổi',
+        .....
+       'Bạn biết Data Science ở mức độ nào?',
+       'Bạn biết Marketing ở mức độ nào?'],
+      dtype='object')`
+
+Để thuận tiện cho việc truy vấn cũng như đảm bảo an toàn cho dữ liệu, chúng ta tiến hành mã hóa tên các cột. 
+`new_names = ['col0', 'col1', 'col2', 'col3', 'col4', 'col5',
+             'col6', 'col7', 'col8', 'col9','col10', 'col11', 
+             'col12', 'col13', 'col14', 'col15', 'col16']`.  Biến `new_names` đã được tạo sẵn
+
+Thư viện `pandas` đã được load sẵn với `pd`.  File csv đã được khai báo với biến `members`
+
+
+`@instructions`
+-  Xem tên các cột bằng cách gọi thuộc tính `columns`
+- Lưu tên cột với biến `col_names`
+- Gán tên mới cho cột
+
+`@hint`
+Bạn đã gọi `members.columns` chưa?
+
+`@pre_exercise_code`
+
+```{python}
+import pandas as pd
+members = pd.read_csv('/datasets/members.csv')
+new_names = ['col0', 'col1', 'col2', 'col3', 'col4', 'col5',
+             'col6', 'col7', 'col8', 'col9','col10', 'col11', 
+             'col12', 'col13', 'col14', 'col15', 'col16']
+```
+
+`@sample_code`
+
+```{python}
+#Xem tên các cột
+print(members.__)
+#Lưu tên cột với biến : col_names
+#col_names = list(__.__)
+#Map tên cột và tên đã mã hóa:
+#map_col = dict(zip(new_names,col_names)
+#Gán tên cột với 
+#members.__ = new_names
+```
+
+`@solution`
+
+```{python}
+#Xem tên các cột
+print(members.columns)
+#Lưu tên cột với biến : col_names
+#col_names = list(members.columns)
+#Map tên cột và tên đã mã hóa:
+#map_col = dict(zip(new_names,col_names)
+#Gán tên cột mới
+#members.columns = new_names
+```
+
+`@sct`
+
+```{python}
+Ex().has_printout(0)
+success_msg("Great job!")
+```
