@@ -142,6 +142,6 @@ map_col = dict(zip(new_names,members.columns)
 
 ```{python}
 Ex().has_printout(0)
-Ex().check_object("members.columns").has_equal_value()
+#Ex().check_object("members.columns").has_equal_value()
 success_msg("Great job!")
 ```
