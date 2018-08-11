@@ -96,39 +96,39 @@ key: 03e7143a4a
 ```
 
 
-
+Để xem tên cột dữ liệu ta sử dụng thuộc tính `columns`.  Kết quả có dạng `Index(['Dấu thời gian', 'Giới tính', 'Tỉnh thành đang làm việc',
+       'Số năm tại khu vực sinh sống', 'Độ tuổi'], dtype='object')`
+Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫu đã được lưu với biến `members`
 
 
 `@instructions`
-
+- Xuất tên các cột sử dụng `columns` với tập dữ liệu `members`
 
 `@hint`
-
+- Bạn đã gọi thuộc tính `columns` chưa
 
 `@pre_exercise_code`
 
 ```{python}
-
+import pandas as pd
+members = pd.read_csv('/datasets/members.csv').iloc[:5,:5]
+new_names = ['col0','col1','col2','col3','col4']
 ```
-
 
 `@sample_code`
 
 ```{python}
-
+print(members.__)
 ```
-
 
 `@solution`
 
 ```{python}
-
+print(membes.columns)
 ```
-
 
 `@sct`
 
 ```{python}
-
+Ex().has_printout(0)
 ```
-
