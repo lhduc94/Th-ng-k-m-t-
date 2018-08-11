@@ -108,7 +108,7 @@ Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫ
 `@instructions`
 -  Xuất tên các cột sử dụng `columns`
 - `map_col` sẽ có dạng `{'Độ tuổi': 'col4', 'Giới tính': 'col1', 'Dấu thời gian': 'col0', 'Tỉnh thành đang làm việc': 'col2', 'Số năm tại khu vực sinh sống': 'col3'}` 
-- Thay đổi tên các cột thành các tên mới sử dụng `rename.(columns=__)`
+- Thay đổi tên các cột thành các tên mới sử dụng `rename(columns=__)`
 
 `@hint`
 - Bạn đã gọi thuộc tính `columns` chưa?
