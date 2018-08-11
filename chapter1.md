@@ -129,6 +129,7 @@ new_names = ['col0','col1','col2','col3','col4']
 print(members.__)
 #Map tên cột và tên mới
 map_col = dict(zip(members.columns,new_names))
+print(map_col)
 #Đổi tên cột
 members.rename(columns=__)
 #Xuất danh sách tên cột
@@ -142,6 +143,7 @@ print(members.__)
 print(members.columns)
 #Map tên cột và tên mới
 map_col = dict(zip(members.columns,new_names))
+print(map_col)
 #Đổi tên cột
 members.rename(columns=map_col)
 #Xuất danh sách tên cột
@@ -152,7 +154,7 @@ print(members.columns)
 
 ```{python}
 Ex().has_printout(0)
-Ex().check_funtion('members.rename').check_args("columns").has_equal_ast()
 Ex().has_printout(1)
+Ex().has_printout(2)
 success_msg("Great job!")
 ```
