@@ -121,6 +121,8 @@ new_names = ['col0','col1','col2','col3','col4']
 ```{python}
 #Xuất tên cột
 print(members.__)
+#Map tên cột và tên mới
+map_col = dict(zip(new_names,members.columns)
 ```
 
 `@solution`
@@ -128,6 +130,8 @@ print(members.__)
 ```{python}
 #Xuất tên cột
 print(members.columns)
+#Map tên cột và tên mới
+map_col = dict(zip(new_names,members.columns)
 ```
 
 `@sct`
