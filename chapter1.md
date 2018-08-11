@@ -107,7 +107,7 @@ Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫ
 
 `@instructions`
 -  Xuất tên các cột sử dụng `columns`
-- Map tên cột với tên mới và lưu lại dưới dạng `dict`
+- Map tên cột với tên mới và lưu lại tại biến 'map_col' dưới dạng `dict`
 - Thay đổi tên các cột thành các tên mới sử dụng `rename.(__)`
 
 `@hint`
