@@ -127,7 +127,7 @@ new_names = ['col0', 'col1', 'col2', 'col3', 'col4']
 
 ```{python}
 #Xem tên các cột
-print(members.__)
+#print(members.__)
 #Lưu tên cột với biến : col_names
 #col_names = list(__.__)
 #Map tên cột và tên đã mã hóa:
@@ -140,7 +140,7 @@ print(members.__)
 
 ```{python}
 #Xem tên các cột
-print(members.columns)
+#print(members.columns)
 #Lưu tên cột với biến : col_names
 c#ol_names = list(members.columns)
 #Map tên cột và tên đã mã hóa:
@@ -152,9 +152,9 @@ c#ol_names = list(members.columns)
 `@sct`
 
 ```{python}
-Ex().check_correct(
-	has_printout(0)
-)
+#Ex().check_correct(
+#	has_printout(0)
+#)
 #Ex().check_correct(
 #    check_object('col_names').has_equal_value(),
 #    check_function('list').check_args(0).has_equal_ast('members.colums')
