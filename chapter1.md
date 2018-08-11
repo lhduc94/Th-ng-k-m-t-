@@ -124,7 +124,7 @@ print(members.__)
 `@solution`
 
 ```{python}
-print(membes.columns)
+print(members.columns)
 ```
 
 `@sct`
