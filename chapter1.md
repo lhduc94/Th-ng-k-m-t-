@@ -124,10 +124,8 @@ Bạn đã gọi `members.columns` chưa?
 
 ```{python}
 import pandas as pd
-members = pd.read_csv('/datasets/members.csv')
-new_names = ['col0', 'col1', 'col2', 'col3', 'col4', 'col5',
-             'col6', 'col7', 'col8', 'col9','col10', 'col11', 
-             'col12', 'col13', 'col14', 'col15', 'col16']
+members = pd.read_csv('/datasets/members.csv').iloc[:,:5]
+new_names = ['col0', 'col1', 'col2', 'col3', 'col4']
 ```
 
 `@sample_code`
@@ -159,7 +157,10 @@ members.columns = new_names
 `@sct`
 
 ```{python}
-Ex().has_printout(0)
+Ex().check_correct(
+	has_printout(0),
+  	check_object('')
+)
 #Ex().check_correct(
 #    check_object('col_names').has_equal_value(),
 #    check_function('list').check_args(0).has_equal_ast('members.colums')
