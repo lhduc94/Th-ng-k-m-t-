@@ -122,7 +122,7 @@ new_names = ['col0','col1','col2','col3','col4']
 
 ```{python}
 #Xuất tên cột
-print(members.__)
+#print(members.__)
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,members.columns))
 #Đổi tên cột
@@ -133,7 +133,7 @@ members.columns = __
 
 ```{python}
 #Xuất tên cột
-print(members.columns)
+#print(members.columns)
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,members.columns))
 #Đổi tên cột
@@ -143,8 +143,5 @@ members.columns = new_names
 `@sct`
 
 ```{python}
-Ex().has_printout(0)
-Ex().check_function("members.columns").has_equal_value()
-print(members.columns)
 success_msg("Great job!")
 ```
