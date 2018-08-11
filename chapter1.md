@@ -161,7 +161,7 @@ success_msg("Great job!")
 
 ---
 
-## Insert exercise title here
+## Thay đổi tên cột
 
 ```yaml
 type: BulletExercise 
