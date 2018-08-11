@@ -126,7 +126,7 @@ print(members.__)
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,members.columns))
 #Đổi tên cột
-#members.columns = __
+members.columns = __
 ```
 
 `@solution`
@@ -137,13 +137,13 @@ print(members.columns)
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,members.columns))
 #Đổi tên cột
-#members.columns = new_names
+members.columns = new_names
 ```
 
 `@sct`
 
 ```{python}
 Ex().has_printout(0)
-#Ex().check_object("members.columns").has_equal_value()
+Ex().check_object("members.columns").has_equal_value()
 success_msg("Great job!")
 ```
