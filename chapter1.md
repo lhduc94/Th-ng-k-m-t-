@@ -127,6 +127,8 @@ print(members.__)
 map_col = dict(zip(new_names,members.columns))
 #Đổi tên cột
 members.columns = __
+#Xuất tên cột
+print(members.columns)
 ```
 
 `@solution`
