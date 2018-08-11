@@ -132,11 +132,11 @@ new_names = ['col0', 'col1', 'col2', 'col3', 'col4']
 #Xem tên các cột
 print(members.__)
 #Lưu tên cột với biến : col_names
-col_names = list(__.__)
+#col_names = list(__.__)
 #Map tên cột và tên đã mã hóa:
-map_col = dict(zip(new_names,col_names))
+#map_col = dict(zip(new_names,col_names))
 #Gán tên cột mới 
-members.__ = new_names
+#members.__ = new_names
 ```
 
 `@solution`
@@ -145,11 +145,11 @@ members.__ = new_names
 #Xem tên các cột
 print(members.columns)
 #Lưu tên cột với biến : col_names
-col_names = list(members.columns)
+c#ol_names = list(members.columns)
 #Map tên cột và tên đã mã hóa:
-map_col = dict(zip(new_names,col_names))
+#map_col = dict(zip(new_names,col_names))
 #Gán tên cột mới
-members.columns = new_names
+#members.columns = new_names
 ```
 
 `@sct`
