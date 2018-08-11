@@ -196,7 +196,7 @@ members = pd.read_csv('/datasets/members.csv')
 new_names = ['col0', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8',
        'col9', 'col10', 'col11', 'col12', 'col13', 'col14', 'col15', 'col16']
 map_col = dict(zip(members.columns,new_names))
-members.rename(columns=map_col)
+members.columns = new_names
 ```
 
 `@sample_code`
