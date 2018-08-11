@@ -103,7 +103,7 @@ Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫ
 
 
 `@instructions`
-- Xuất tên các cột sử dụng `columns` với tập dữ liệu `members`
+- Gán danh sách tên cột vào biến `col_names`  sử dụng `columns` với tập dữ liệu `members`
 - Map tên cột với tên mới và lưu lại dưới dạng `dict`
 - Thay đổi tên các cột thành các tên mới được lưu trong `new_names`
 
