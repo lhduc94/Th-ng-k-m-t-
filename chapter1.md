@@ -138,7 +138,6 @@ print(members.columns)
 map_col = dict(zip(new_names,members.columns))
 #Đổi tên cột
 members.columns = new_names
-
 ```
 
 `@sct`
@@ -146,7 +145,6 @@ members.columns = new_names
 ```{python}
 Ex().check_correct(
 	multi(has_printout(0))
-	)
 )
 Ex().check_object("members.columns").has_equal_value()
 success_msg("Great job!")
