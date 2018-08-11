@@ -156,8 +156,7 @@ members.columns = new_names
 
 ```{python}
 Ex().check_correct(
-	has_printout(0),
-  	check_object('')
+	has_printout(0)
 )
 #Ex().check_correct(
 #    check_object('col_names').has_equal_value(),
