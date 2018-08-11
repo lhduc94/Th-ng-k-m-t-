@@ -105,9 +105,7 @@ DataFrame là dữ liệu dưới dạng bảng, bao gồm cột và dòng. Đ�
       dtype='object')`
 
 Để thuận tiện cho việc truy vấn cũng như đảm bảo an toàn cho dữ liệu, chúng ta tiến hành mã hóa tên các cột. 
-`new_names = ['col0', 'col1', 'col2', 'col3', 'col4', 'col5',
-             'col6', 'col7', 'col8', 'col9','col10', 'col11', 
-             'col12', 'col13', 'col14', 'col15', 'col16']`.  Biến `new_names` đã được tạo sẵn
+`new_names = ['col0', 'col1', 'col2', 'col3', 'col4']`.  Biến `new_names` đã được tạo sẵn
 
 Thư viện `pandas` đã được load sẵn với `pd`.  File csv đã được khai báo với biến `members`
 
