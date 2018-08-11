@@ -138,6 +138,8 @@ print(members.columns)
 map_col = dict(zip(new_names,members.columns))
 #Đổi tên cột
 members.columns = new_names
+#Xuất tên cột
+print(members.columns)
 ```
 
 `@sct`
@@ -145,5 +147,6 @@ members.columns = new_names
 ```{python}
 Ex().has_printout(0)
 Ex().check_object("members.columns").has_equal_value()
+Ex().has_printout(1)
 success_msg("Great job!")
 ```
