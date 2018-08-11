@@ -158,3 +158,66 @@ Ex().has_printout(1)
 Ex().has_printout(2)
 success_msg("Great job!")
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: NormalExercise 
+xp: 100 
+key: 1607ca8a15   
+```
+
+
+Để xem tên cột dữ liệu ta sử dụng thuộc tính `columns`.  Kết quả có dạng `Index(['Dấu thời gian', 'Giới tính', 'Tỉnh thành đang làm việc',
+       'Số năm tại khu vực sinh sống', 'Độ tuổi'], dtype='object')`.
+Để dễ dàng truy vấn, ta mã hóa tên cột với các tên mới ` ['col0','col1','col2','col3','col4']` và lưu dưới biến `new_names`.
+
+Sử dụng `rename(columns={'tên cột cũ':'tên cột mới'})` để gán tên mới cho các cột.
+
+Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫu đã được lưu với biến `members`
+
+
+`@instructions`
+-  Xuất tên các cột sử dụng `columns`
+- `map_col` sẽ có dạng `{'Độ tuổi': 'col4', 'Giới tính': 'col1', 'Dấu thời gian': 'col0', 'Tỉnh thành đang làm việc': 'col2', 'Số năm tại khu vực sinh sống': 'col3'}` 
+- Thay đổi tên các cột thành các tên mới sử dụng `rename(columns=__)`
+
+`@hint`
+- Bạn đã gọi thuộc tính `columns` chưa?
+- Bạn đã gán `columns = map_col` trong hàm `rename` chưa
+
+`@pre_exercise_code`
+
+```{python}
+import pandas as pd
+members = pd.read_csv('/datasets/members.csv').iloc[:5,:5]
+new_names = ['col0', 'col1', 'col2', 'col3', 'col4', 'col5', 'col6', 'col7', 'col8',
+       'col9', 'col10', 'col11', 'col12', 'col13', 'col14', 'col15', 'col16']
+map_col = dict(zip(members.columns,new_names))
+members.rename(columns=map_col)
+```
+
+`@sample_code`
+
+```{python}
+#Xem thông tin dữ liệu
+print(members.__)
+#print
+```
+
+`@solution`
+
+```{python}
+#Xem thông tin dữ liệu
+print(members.info())
+#print
+```
+
+`@sct`
+
+```{python}
+Ex().has_printout(0)
+success_msg("Great job!")
+```
