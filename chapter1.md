@@ -143,6 +143,6 @@ members.columns = new_names
 `@sct`
 
 ```{python}
-Ex().check_object(col_name).has_equal_value()
+Ex().check_object(col_names).has_equal_value()
 success_msg("Great job!")
 ```
