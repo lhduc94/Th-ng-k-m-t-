@@ -97,7 +97,8 @@ key: 03e7143a4a
 
 
 Để xem tên cột dữ liệu ta sử dụng thuộc tính `columns`.  Kết quả có dạng `Index(['Dấu thời gian', 'Giới tính', 'Tỉnh thành đang làm việc',
-       'Số năm tại khu vực sinh sống', 'Độ tuổi'], dtype='object')`
+       'Số năm tại khu vực sinh sống', 'Độ tuổi'], dtype='object')`.
+Để dễ dàng truy vấn, ta mã hóa tên cột với các tên mới ` ['col0','col1','col2','col3','col4']` và lưu dưới biến `new_names`
 Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫu đã được lưu với biến `members`
 
 
@@ -118,12 +119,14 @@ new_names = ['col0','col1','col2','col3','col4']
 `@sample_code`
 
 ```{python}
+#Xuất tên cột
 print(members.__)
 ```
 
 `@solution`
 
 ```{python}
+#Xuất tên cột
 print(members.columns)
 ```
 
