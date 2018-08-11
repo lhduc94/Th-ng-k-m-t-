@@ -131,4 +131,5 @@ print(members.columns)
 
 ```{python}
 Ex().has_printout(0)
+success_msg("Great job!")
 ```
