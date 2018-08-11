@@ -124,7 +124,7 @@ new_names = ['col0','col1','col2','col3','col4']
 #Gán tên cột cho biến col_names
 col_names = list(members.__)
 #Map tên cột và tên mới
-map_col = dict(zip(new_names,members.columns))
+map_col = dict(zip(new_names,col_names))
 #Đổi tên cột
 members.columns = __
 ```
@@ -135,7 +135,7 @@ members.columns = __
 #Gán tên cột cho biến col_names
 col_names = list(members.columns)
 #Map tên cột và tên mới
-map_col = dict(zip(new_names,members.columns))
+map_col = dict(zip(new_names,col_names))
 #Đổi tên cột
 members.columns = new_names
 ```
