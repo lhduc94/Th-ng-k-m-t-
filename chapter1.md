@@ -140,7 +140,7 @@ col_names = list(__.__)
 #Map tên cột và tên đã mã hóa:
 map_col = dict(zip(new_names,col_names))
 #Gán tên cột mới 
-#members.__ = new_names
+members.__ = new_names
 ```
 
 `@solution`
@@ -153,7 +153,7 @@ col_names = list(members.columns)
 #Map tên cột và tên đã mã hóa:
 map_col = dict(zip(new_names,col_names))
 #Gán tên cột mới
-#members.columns = new_names
+members.columns = new_names
 ```
 
 `@sct`
