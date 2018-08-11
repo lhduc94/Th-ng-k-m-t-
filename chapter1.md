@@ -145,5 +145,6 @@ members.columns = new_names
 ```{python}
 Ex().has_printout(0)
 #Ex().check_object("members.columns").has_equal_value()
+print(members.columns)
 success_msg("Great job!")
 ```
