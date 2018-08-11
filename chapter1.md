@@ -170,7 +170,7 @@ key: 1af9595b3b
 ```
 
 
-
+Cách khác
 
 
 `@pre_exercise_code`
