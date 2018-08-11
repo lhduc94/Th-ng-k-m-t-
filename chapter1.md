@@ -136,7 +136,7 @@ new_names = ['col0', 'col1', 'col2', 'col3', 'col4', 'col5',
 #Xem tên các cột
 print(members.__)
 #Lưu tên cột với biến : col_names
-#col_names = list(__.__)
+col_names = list(__.__)
 #Map tên cột và tên đã mã hóa:
 #map_col = dict(zip(new_names,col_names)
 #Gán tên cột với 
@@ -149,7 +149,7 @@ print(members.__)
 #Xem tên các cột
 print(members.columns)
 #Lưu tên cột với biến : col_names
-#col_names = list(members.columns)
+col_names = list(members.columns)
 #Map tên cột và tên đã mã hóa:
 #map_col = dict(zip(new_names,col_names)
 #Gán tên cột mới
@@ -160,5 +160,19 @@ print(members.columns)
 
 ```{python}
 Ex().has_printout(0)
+#Ex().check_correct(
+#    check_object('col_names').has_equal_value(),
+#    check_function('list').check_args(0).has_equal_ast('members.colums')
+#)
+#Ex().check_correct(
+#    check_object('map_col').has_equal_value(),
+#  	check_correct(
+#    	check_function('dict').check_args(0).has_equal_ast()
+#        check_function('zip').multi(
+#        	check_args(0).has_equal_value(),
+#            check_args(1).has_equal_value()
+#        )
+#    )
+#)
 success_msg("Great job!")
 ```
