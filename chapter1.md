@@ -128,7 +128,7 @@ col_names = members.__.__
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,col_names))
 #Đổi tên cột
-members.columns = __
+#members.columns = __
 ```
 
 `@solution`
@@ -141,7 +141,7 @@ col_names = members.columns.tolist()
 #Map tên cột và tên mới
 map_col = dict(zip(new_names,col_names))
 #Đổi tên cột
-members.columns = new_names
+#members.columns = new_names
 ```
 
 `@sct`
