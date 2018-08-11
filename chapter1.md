@@ -158,3 +158,32 @@ Ex().has_printout(1)
 Ex().has_printout(2)
 success_msg("Great job!")
 ```
+
+---
+
+## Insert exercise title here
+
+```yaml
+type: BulletExercise 
+xp: 100 
+key: 1af9595b3b   
+```
+
+
+
+
+
+`@pre_exercise_code`
+
+```{python}
+import pandas as pd
+members = pd.read_csv('/datasets/members.csv').iloc[:5,:5]
+new_names = ['col0','col1','col2','col3','col4']
+```
+
+`@sample_code`
+
+```{python}
+members.columns=new_names
+print(members.columns)
+```
