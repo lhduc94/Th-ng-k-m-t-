@@ -100,60 +100,35 @@ key: 03e7143a4a
 
 
 `@instructions`
--  Xem tên các cột bằng cách gọi thuộc tính `columns`
-- Lưu tên cột với biến `col_names`
-- Gán tên mới cho cột
+
 
 `@hint`
-Bạn đã gọi `members.columns` chưa?
+
 
 `@pre_exercise_code`
 
 ```{python}
-import pandas as pd
-members = pd.read_csv('/datasets/members.csv').iloc[:,:5]
-new_names = ['col0', 'col1', 'col2', 'col3', 'col4']
+
 ```
+
 
 `@sample_code`
 
 ```{python}
-#Xem tên các cột
-#print(members.__)
-#Lưu tên cột với biến : col_names
-#col_names = list(__.__)
-#Map tên cột và tên đã mã hóa:
-#map_col = dict(zip(new_names,col_names))
-#Gán tên cột mới 
-#members.__ = new_names
+
 ```
+
 
 `@solution`
 
 ```{python}
-#Xem tên các cột
-#print(members.columns)
-#Lưu tên cột với biến : col_names
-c#ol_names = list(members.columns)
-#Map tên cột và tên đã mã hóa:
-#map_col = dict(zip(new_names,col_names))
-#Gán tên cột mới
-#members.columns = new_names
+
 ```
+
 
 `@sct`
 
 ```{python}
-#Ex().check_correct(
-#	has_printout(0)
-#)
-#Ex().check_correct(
-#    check_object('col_names').has_equal_value(),
-#    check_function('list').check_args(0).has_equal_ast('members.colums')
-#)
-#Ex().check_correct(
-#    check_object('map_col').has_equal_value(),
-#    )
-#)
-success_msg("Great job!")
+
 ```
+
