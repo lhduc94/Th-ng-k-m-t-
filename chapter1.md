@@ -98,17 +98,21 @@ key: 03e7143a4a
 
 Để xem tên cột dữ liệu ta sử dụng thuộc tính `columns`.  Kết quả có dạng `Index(['Dấu thời gian', 'Giới tính', 'Tỉnh thành đang làm việc',
        'Số năm tại khu vực sinh sống', 'Độ tuổi'], dtype='object')`.
-Để dễ dàng truy vấn, ta mã hóa tên cột với các tên mới ` ['col0','col1','col2','col3','col4']` và lưu dưới biến `new_names`
+Để dễ dàng truy vấn, ta mã hóa tên cột với các tên mới ` ['col0','col1','col2','col3','col4']` và lưu dưới biến `new_names`.
+
+Sử dụng `rename(columns={'tên cột cũ':'tên cột mới'})` để gán tên mới cho các cột.
+
 Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫu đã được lưu với biến `members`
 
 
 `@instructions`
-- Gán danh sách tên cột vào biến `col_names`  sử dụng `columns` với tập dữ liệu `members`
+-  Xuất tên các cột sử dụng `columns`
 - Map tên cột với tên mới và lưu lại dưới dạng `dict`
 - Thay đổi tên các cột thành các tên mới được lưu trong `new_names`
 
 `@hint`
-- Bạn đã gọi thuộc tính `columns` chưa
+- Bạn đã gọi thuộc tính `columns` chưa?
+- Bạn đã gán `columns = map_col` trong hàm `rename` chưa
 
 `@pre_exercise_code`
 
