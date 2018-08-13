@@ -170,19 +170,13 @@ key: 1607ca8a15
 ```
 
 
-Để xem tên cột dữ liệu ta sử dụng thuộc tính `columns`.  Kết quả có dạng `Index(['Dấu thời gian', 'Giới tính', 'Tỉnh thành đang làm việc',
-       'Số năm tại khu vực sinh sống', 'Độ tuổi'], dtype='object')`.
-Để dễ dàng truy vấn, ta mã hóa tên cột với các tên mới ` ['col0','col1','col2','col3','col4']` và lưu dưới biến `new_names`.
+Để xem thông tin về kiểu dữ liệu của các trường (cột) cũng như xem mỗi cột có bao nhiêu giá trị không missing, ta sử dụng lệnh `info()`
 
-Sử dụng `rename(columns={'tên cột cũ':'tên cột mới'})` để gán tên mới cho các cột.
-
-Thư viện `pandas` đã được load sẵn với tên `pd`.  Dữ liệu mẫu đã được lưu với biến `members`
+Data đã được load sẵn trên biến `members` và `map_col`
 
 
 `@instructions`
--  Xuất tên các cột sử dụng `columns`
-- `map_col` sẽ có dạng `{'Độ tuổi': 'col4', 'Giới tính': 'col1', 'Dấu thời gian': 'col0', 'Tỉnh thành đang làm việc': 'col2', 'Số năm tại khu vực sinh sống': 'col3'}` 
-- Thay đổi tên các cột thành các tên mới sử dụng `rename(columns=__)`
+- Xem thông tin cột sử dụng `info()`
 
 `@hint`
 - Bạn đã gọi thuộc tính `columns` chưa?
