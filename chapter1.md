@@ -178,7 +178,8 @@ col0     21 non-null object
 ...
 col7     19 non-null object
 col8     19 non-null object`
-`21 entries` thể hiện số dòng dữ liệu, `col7     19 non-null object` thể hiện 19 dòng dữ liệu có giá trị trong cột col7` như vậy cột này đang chứa missing values
+`21 entries` thể hiện số dòng dữ liệu, `col7     19 non-null object` thể hiện 19 dòng dữ liệu có giá trị trong cột `col7 `như vậy cột này đang chứa missing values
+Ngoài ra ta có thể xem kiểu dữ liệu của cột thông qua lênh này, như ví dụ trên ta có `col0` có kiểu dữ liệu `object` (thường là string) và `col3` có kiểu dữ liệu `int64`
 Data đã được load sẵn trên biến `members` và `map_col`
 
 
