@@ -174,7 +174,9 @@ key: 1607ca8a15
 Kết quả thu được
 `<class 'pandas.core.frame.DataFrame'>
 RangeIndex: 21 entries, 0 to 20
-Data columns (total 17 columns):
+
+
+ columns (total 17 columns):
 
 col0     21 non-null object
 
