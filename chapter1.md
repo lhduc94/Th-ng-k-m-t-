@@ -175,9 +175,13 @@ Kết quả thu được
 `<class 'pandas.core.frame.DataFrame'>
 RangeIndex: 21 entries, 0 to 20
 Data columns (total 17 columns):
+
 col0     21 non-null object
+
 ...
+
 col7     19 non-null object
+
 col8     19 non-null object`
 Data đã được load sẵn trên biến `members` và `map_col`
 
