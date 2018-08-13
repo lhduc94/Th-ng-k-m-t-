@@ -161,7 +161,7 @@ success_msg("Great job!")
 
 ---
 
-## Insert exercise title here
+## Xem thông tin dữ liệu
 
 ```yaml
 type: NormalExercise 
@@ -172,12 +172,13 @@ key: 1607ca8a15
 
 Để xem thông tin về kiểu dữ liệu của các trường (cột) cũng như xem mỗi cột có bao nhiêu giá trị không missing, ta sử dụng lệnh `info()`
 Kết quả thu được
-`col7     19 non-null object
-col8     19 non-null object
-col9     18 non-null object
-col10    17 non-null object
-col11    21 non-null object
-col12    15 non-null object`
+`<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 21 entries, 0 to 20
+Data columns (total 17 columns):
+col0     21 non-null object
+...
+col7     19 non-null object
+col8     19 non-null object`
 Data đã được load sẵn trên biến `members` và `map_col`
 
 
