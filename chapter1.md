@@ -224,5 +224,6 @@ print(members[members.isnull().any(axis=1)])
 
 ```{python}
 Ex().has_printout(0)
+Ex().has_printout(1)
 success_msg("Great job!")
 ```
