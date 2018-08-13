@@ -185,6 +185,7 @@ Data đã được load sẵn trên biến `members` và `map_col`
 
 `@instructions`
 - Xem thông tin cột sử dụng `info()`
+- Xem các dòng chứa ít nhất 1 giá trị null, sử dụng `members[members.isnull().any(axis=1)]`
 
 `@hint`
 - Bạn đã gọi thuộc tính `columns` chưa?
@@ -206,7 +207,8 @@ members.columns = new_names
 ```{python}
 #Xem thông tin dữ liệu
 print(members.__)
-#print
+#Xem các dòng chứa null
+print(__)
 ```
 
 `@solution`
@@ -214,7 +216,8 @@ print(members.__)
 ```{python}
 #Xem thông tin dữ liệu
 print(members.info())
-#print
+#Xem các dòng chứa null
+print(members[members.isnull().any(axis=1)])
 ```
 
 `@sct`
