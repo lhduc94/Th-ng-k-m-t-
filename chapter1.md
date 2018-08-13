@@ -172,19 +172,13 @@ key: 1607ca8a15
 
 Để xem thông tin về kiểu dữ liệu của các trường (cột) cũng như xem mỗi cột có bao nhiêu giá trị không missing, ta sử dụng lệnh `info()`
 Kết quả thu được
-`<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 21 entries, 0 to 20
-
-
+`RangeIndex: 21 entries, 0 to 20
  columns (total 17 columns):
-
 col0     21 non-null object
-
 ...
-
 col7     19 non-null object
-
 col8     19 non-null object`
+`21 entries` thể hiện số dòng dữ liệu, `col7     19 non-null object` thể hiện 19 dòng dữ liệu có giá trị trong cột col7` như vậy cột này đang chứa missing values
 Data đã được load sẵn trên biến `members` và `map_col`
 
 
